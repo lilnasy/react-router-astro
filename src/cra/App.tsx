@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link } from "react-router";
 
 export default function App() {
   return (
@@ -32,16 +32,16 @@ function Layout() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home (react router SPA navigation)</Link>
           </li>
           <li>
-            <Link reloadDocument to="/about">About</Link>
+            <Link reloadDocument to="/about">About (browser navigation)</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/dashboard">Dashboard (react router SPA navigation)</Link>
           </li>
           <li>
-            <Link to="/nothing-here">Nothing Here</Link>
+            <Link to="/nothing-here">Nothing Here (react router SPA navigation)</Link>
           </li>
         </ul>
       </nav>
